@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="CustomDirective">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="autocomplete-jquery-ui.structure.css">
+    <link rel="stylesheet" href="style.css">
+    <title>CustomDirective</title>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.0-beta.5/angular.min.js"></script>
+    <script src="https://code.angularjs.org/1.4.0-beta.5/angular-route.min.js"></script>
+    <script src="//code.jquery.com/jquery-latest.min.js"></script>
+    <script src="autocomplete-jquery-ui.js"></script>
+    <script src="app.js"></script>
+    <script src="directives.js"></script>
+    <script src="controllers.js"></script>
+    <style>
+        .circular {
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            display: inline-block;
+        }
+        
+        .no-list li {
+            list-style-type: none;
+        }
+        
+        body,
+        html {
+            text-align: center;
+            background-color: #eee;
+            margin: 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <div ng-view></div>
+</body>
+
+</html>
